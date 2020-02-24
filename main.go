@@ -18,6 +18,7 @@ func main() {
 	db.AutoMigrate(d)
 
 	us := store.NewUserStore(d)
+	d.Close()
 	//as := store.NewArticleStore(d)
 	h := handler.NewHandler(us)
 	h.Register(v1)
