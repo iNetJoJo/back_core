@@ -24,10 +24,16 @@
 #   go-tests = true
 #   unused-packages = true
 
+required = ["github.com/kerlexov/back_core"]
+
 
 [prune]
   go-tests = true
   unused-packages = true
+
+[[override]]
+  name = "github.com/kerlexov/back_core"
+  branch = "master"
 
 [[constraint]]
   name = "github.com/labstack/echo"

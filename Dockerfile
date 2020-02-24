@@ -13,7 +13,7 @@ RUN apk update && apk add --no-cache git && mkdir /go/src/app
 # Set the current working directory inside the container
 WORKDIR /go/src/app
 
-RUN go get -u github.com/golang/dep/cmd/dep
+RUN go get -u github.com/golang/dep/cmd/dep && go get -u github.com/kerlexov/back_core
 
 # Copy go mod and sum files
 ADD Gopkg.* ./

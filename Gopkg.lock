@@ -71,9 +71,10 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:913751eb56b044d4387d6092d5c6417a203470e8bb1bb07b699fe197510f6c12"
+  digest = "1:f3fc0646fc487d42a94c526bbb962954d458aba59a6c3236fa43a2337f505961"
   name = "github.com/kerlexov/back_core"
   packages = [
+    ".",
     "db",
     "handler",
     "model",
@@ -287,6 +288,7 @@
     "github.com/dgrijalva/jwt-go",
     "github.com/jinzhu/gorm",
     "github.com/jinzhu/gorm/dialects/postgres",
+    "github.com/kerlexov/back_core",
     "github.com/kerlexov/back_core/db",
     "github.com/kerlexov/back_core/handler",
     "github.com/kerlexov/back_core/model",
