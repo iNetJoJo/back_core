@@ -1,0 +1,56 @@
+version: '3'
+services:
+  api:
+    container_name: api
+    build: .
+    ports:
+      - 420:420
+    restart: on-failure
+    volumes:
+      - apivol:/usr/src/app/
+    depends_on:
+      - db
+    networks:
+      - van
+      - nutra
+
+  db:
+    image: postgres:latest
+    container_name: db_postgres
+    environment:
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=${DB_NAME}
+      - DATABASE_HOST=${DB_HOST}
+    ports:
+      - '5432:5432'
+    volumes:
+      - dbvol:/var/lib/postgresql/data
+    networks:
+      - nutra
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
+    depends_on:
+      - db
+    ports:
+      - "5050:80"
+    networks:
+      - nutra
+      - van
+    restart: unless-stopped
+
+volumes:
+  apivol:
+  dbvol:
+
+# Networks to be created to facilitate communication between containers
+networks:
+  nutra:
+    internal: true
+  van:
+    external: true
