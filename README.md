@@ -1,45 +1,42 @@
 # backend core 
 
 #### Env config
-Make sure you export this variables in your ~/.shrc or ~/.zshrc
+Make sure you export this variables in your .env
 ```
-echo $GOPATH
-/Users/USERNAME/go/
+DB_HOST=127.0.0.1
+DB_DRIVER=postgres
+API_SECRET=98hbun98h
+DB_USER=user
+DB_PASSWORD=pass
+DB_NAME=core
+DB_PORT=5432
 
-echo $GOROOT
-/usr/local/go/
-
-echo $PATH
-...:/usr/local/go/bin:/Users/USERNAME/go//bin
-:/usr/local/go//bin
+PGADMIN_DEFAULT_EMAIL=email@gmail.com
+PGADMIN_DEFAULT_PASSWORD=password
 ```
 
-#### Get deps
+#### Docker Compose
+Starting services
 ``` 
-~ cd
-~ go get -u github.com/golang/dep/cmd/dep
-~ go get -u github.com/pilu/fresh
-~ go get -u github.com/labstack/echo/...
+~ docker-compose up
+~ docker-compose up -d
+```
+Stopping services
+``` 
+~ docker-compose rm
+~ docker-compose down
+~ docker-compose kill
+```
+Rebuilding
+``` 
+~ docker-compose rm
+~ docker-compose down
+~ docker rmi back_core_api
 
+~ docker-compose up
 ```
 
-#### Start
 
-```
-~ dep ensure -update
-~ fresh
-```
 
-#### Testing
-
-```
-~ go test -v ./... -cover
-```
-
-#### Config
-
-```
-
-```
 
 
