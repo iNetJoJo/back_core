@@ -71,13 +71,17 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:78b01b9f2f5440fd33ba9313d175ef804b9a90180cc52563272b429125ebe37c"
+  digest = "1:913751eb56b044d4387d6092d5c6417a203470e8bb1bb07b699fe197510f6c12"
   name = "github.com/kerlexov/back_core"
   packages = [
     "db",
     "handler",
+    "model",
     "router",
+    "router/middleware",
     "store",
+    "user",
+    "utils",
   ]
   pruneopts = "UT"
   revision = "b9c3692ffd53e1d5addbd30205edb6c54dc41d3e"
@@ -285,8 +289,12 @@
     "github.com/jinzhu/gorm/dialects/postgres",
     "github.com/kerlexov/back_core/db",
     "github.com/kerlexov/back_core/handler",
+    "github.com/kerlexov/back_core/model",
     "github.com/kerlexov/back_core/router",
+    "github.com/kerlexov/back_core/router/middleware",
     "github.com/kerlexov/back_core/store",
+    "github.com/kerlexov/back_core/user",
+    "github.com/kerlexov/back_core/utils",
     "github.com/labstack/echo",
     "github.com/labstack/echo/middleware",
     "github.com/labstack/gommon/log",
