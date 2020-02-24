@@ -3,17 +3,15 @@ FROM golang:alpine as builder
 
 # ENV GO111MODULE=on
 
-# Add Maintainer info
 LABEL maintainer="kerlexov <kerlexov@gmail.com>"
 
 # Install git.
-# Git is required for fetching the dependencies.
-RUN apk update && apk add --no-cache git && mkdir /go/src/app
+RUN apk update && apk add --no-cache git && mkdir /go/src/back_core
 
 # Set the current working directory inside the container
-WORKDIR /go/src/app
+WORKDIR /go/src/back_core
 
-RUN go get -u github.com/golang/dep/cmd/dep && go get -u github.com/kerlexov/back_core
+RUN go get github.com/golang/dep/cmd/dep && go get github.com/kerlexov/back_core
 
 # Copy go mod and sum files
 ADD Gopkg.* ./
@@ -34,8 +32,8 @@ RUN apk --no-cache add ca-certificates
 WORKDIR /root/
 
 # Copy the Pre-built binary file from the previous stage. Observe we also copied the .env file
-COPY --from=builder /go/src/app/main .
-COPY --from=builder /go/src/app/.env .
+COPY --from=builder /go/src/back_core/main .
+COPY --from=builder /go/src/back_core/.env .
 
 # Expose port 420 to the outside world
 EXPOSE 420

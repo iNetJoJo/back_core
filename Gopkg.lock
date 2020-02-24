@@ -71,10 +71,9 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:f3fc0646fc487d42a94c526bbb962954d458aba59a6c3236fa43a2337f505961"
+  digest = "1:5d01eff5e585140e3c6f56f75353ed179bede95979f7bafec9d5fed20839113b"
   name = "github.com/kerlexov/back_core"
   packages = [
-    ".",
     "db",
     "handler",
     "model",
@@ -85,7 +84,7 @@
     "utils",
   ]
   pruneopts = "UT"
-  revision = "b9c3692ffd53e1d5addbd30205edb6c54dc41d3e"
+  revision = "1f4191c054ea26629c80b168fc4d9d72392caa4f"
 
 [[projects]]
   digest = "1:efd601ad1d1189884f37ed075fadb5bbd17f1f5acf5862827247c6da56d125ba"
@@ -288,7 +287,6 @@
     "github.com/dgrijalva/jwt-go",
     "github.com/jinzhu/gorm",
     "github.com/jinzhu/gorm/dialects/postgres",
-    "github.com/kerlexov/back_core",
     "github.com/kerlexov/back_core/db",
     "github.com/kerlexov/back_core/handler",
     "github.com/kerlexov/back_core/model",
