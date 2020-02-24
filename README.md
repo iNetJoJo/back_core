@@ -36,7 +36,11 @@ Rebuilding
 ~ docker-compose up
 ```
 
-
+Final
+``` 
+pgadmin     ->  http://localhost:5050
+api         ->  http://localhost:420
+```
 
 
 
