@@ -1,7 +1,7 @@
 package handler
 
 import (
-	"back_core/model"
+	"github.com/kerlexov/back_core/model"
 	"github.com/labstack/echo"
 )
 

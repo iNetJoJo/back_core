@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"back_core/utils"
+	"github.com/kerlexov/back_core/utils"
 	"github.com/dgrijalva/jwt-go"
 	"github.com/labstack/echo"
 )

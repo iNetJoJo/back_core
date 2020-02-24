@@ -8,7 +8,7 @@ import (
 	"github.com/jinzhu/gorm"
 	//_ "github.com/jinzhu/gorm/dialects/sqlite"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
-	"back_core/model"
+	"github.com/kerlexov/back_core/model"
 )
 
 func New() *gorm.DB {

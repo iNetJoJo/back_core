@@ -2,44 +2,12 @@
 
 
 [[projects]]
-  branch = "2.x"
-  digest = "1:363b0e34612c52f9b707606c16eab4d3a9482a349b853fee485a23b583228dd3"
-  name = "github.com/Masterminds/semver"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "317e8cce5480d12bcbaa660fb8e11f7d7cf27249"
-
-[[projects]]
-  digest = "1:f154754548cdef8790ec20f3e4485e3feb7c7ed5891f52d6e98f3a3d2584a50a"
-  name = "github.com/Masterminds/vcs"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "f94282d8632a0620f79f0c6ff0e82604e8c5c85b"
-  version = "v1.13.1"
-
-[[projects]]
-  digest = "1:c47f4964978e211c6e566596ec6246c329912ea92e9bb99c00798bb4564c5b09"
-  name = "github.com/armon/go-radix"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "1a2de0c21c94309923825da3df33a4381872c795"
-  version = "v1.0.0"
-
-[[projects]]
   digest = "1:d6afaeed1502aa28e80a4ed0981d570ad91b2579193404256ce672ed0a609e0d"
   name = "github.com/beorn7/perks"
   packages = ["quantile"]
   pruneopts = "UT"
   revision = "37c8de3658fcb183f997c4e13e8337516ab753e6"
   version = "v1.0.1"
-
-[[projects]]
-  digest = "1:0f98f59e9a2f4070d66f0c9c39561f68fcd1dc837b22a852d28d0003aebd1b1e"
-  name = "github.com/boltdb/bolt"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "2f1ce7a837dcb8da3ec595b1dac9d0632f0f99e8"
-  version = "v1.3.1"
 
 [[projects]]
   digest = "1:76dc72490af7174349349838f2fe118996381b31ea83243812a97e5a0fd5ed55"
@@ -67,33 +35,6 @@
   pruneopts = "UT"
   revision = "f87b1403479a348651dbf5f07f5cc6e5fcf07008"
   version = "v0.17.0"
-
-[[projects]]
-  digest = "1:578fa3fa63e856d0651c3d788bdf818ba851db50665ae91ff1604bceb5f8dc6f"
-  name = "github.com/golang/dep"
-  packages = [
-    ".",
-    "cmd/dep",
-    "gps",
-    "gps/internal/pb",
-    "gps/paths",
-    "gps/pkgtree",
-    "gps/verify",
-    "internal/feedback",
-    "internal/fs",
-    "internal/importers",
-    "internal/importers/base",
-    "internal/importers/glide",
-    "internal/importers/glock",
-    "internal/importers/godep",
-    "internal/importers/govend",
-    "internal/importers/govendor",
-    "internal/importers/gvt",
-    "internal/importers/vndr",
-  ]
-  pruneopts = "UT"
-  revision = "1f7c19e5f52f49ffb9f956f64c010be14683468b"
-  version = "v0.5.4"
 
 [[projects]]
   digest = "1:0314772c6631bb25d46f0b6a46bed7145e359cbb7411db99682a3b0d1d0cd00f"
@@ -129,12 +70,17 @@
   version = "v1.0.0"
 
 [[projects]]
-  digest = "1:dcb3e2ad17349c0cc89ffc16692d05195e6a67b4924fe81760fba9a307a7271d"
-  name = "github.com/jmank88/nuts"
-  packages = ["."]
+  branch = "master"
+  digest = "1:78b01b9f2f5440fd33ba9313d175ef804b9a90180cc52563272b429125ebe37c"
+  name = "github.com/kerlexov/back_core"
+  packages = [
+    "db",
+    "handler",
+    "router",
+    "store",
+  ]
   pruneopts = "UT"
-  revision = "61b15a02400deb6a15ed0d54df135de0b55f4afb"
-  version = "v0.3.1"
+  revision = "b9c3692ffd53e1d5addbd30205edb6c54dc41d3e"
 
 [[projects]]
   digest = "1:efd601ad1d1189884f37ed075fadb5bbd17f1f5acf5862827247c6da56d125ba"
@@ -206,30 +152,6 @@
   version = "v1.0.1"
 
 [[projects]]
-  branch = "master"
-  digest = "1:60a50d7abceb8296a412c6f6c18594af500c58ebf9235f3f0a41680ecc9e8d9d"
-  name = "github.com/nightlyone/lockfile"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "edb130adc1955aace841f9a42418ba8796b5abfb"
-
-[[projects]]
-  digest = "1:6eea828983c70075ca297bb915ffbcfd3e34c5a50affd94428a65df955c0ff9c"
-  name = "github.com/pelletier/go-toml"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "903d9455db9ff1d7ac1ab199062eca7266dd11a3"
-  version = "v1.6.0"
-
-[[projects]]
-  digest = "1:cf31692c14422fa27c83a05292eb5cbe0fb2775972e8f1f8446a71549bd8980b"
-  name = "github.com/pkg/errors"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "ba968bfe8b2f7e042a574c888954fccecfa385b4"
-  version = "v0.8.1"
-
-[[projects]]
   digest = "1:eb04f69c8991e52eff33c428bd729e04208bf03235be88e4df0d88497c6861b9"
   name = "github.com/prometheus/client_golang"
   packages = [
@@ -274,14 +196,6 @@
   version = "v0.0.10"
 
 [[projects]]
-  branch = "master"
-  digest = "1:3b2f0fcb35e10e0f7845f2182e4dd22f5a6fe3db5d1044ca815d646992a2444f"
-  name = "github.com/sdboyer/constext"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "836a144573533ea4da4e6929c235fd348aed1c80"
-
-[[projects]]
   digest = "1:c468422f334a6b46a19448ad59aaffdfc0a36b08fdcc1c749a0b29b6453d7e59"
   name = "github.com/valyala/bytebufferpool"
   packages = ["."]
@@ -317,14 +231,6 @@
   packages = ["idna"]
   pruneopts = "UT"
   revision = "5a598a2470a0279bd28bab287167dc1ef0813153"
-
-[[projects]]
-  branch = "master"
-  digest = "1:b521f10a2d8fa85c04a8ef4e62f2d1e14d303599a55d64dabf9f5a02f84d35eb"
-  name = "golang.org/x/sync"
-  packages = ["errgroup"]
-  pruneopts = "UT"
-  revision = "cd5d95a43a6e21273425c7ae415d3df9ea832eeb"
 
 [[projects]]
   branch = "master"
@@ -370,22 +276,17 @@
   revision = "21c910fc6d9c3556c28252b04beb17de0c2d40ec"
   version = "v9.31.0"
 
-[[projects]]
-  digest = "1:55b110c99c5fdc4f14930747326acce56b52cfce60b24b1c03ef686ac0e46bb1"
-  name = "gopkg.in/yaml.v2"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "53403b58ad1b561927d19068c655246f2db79d48"
-  version = "v2.2.8"
-
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
     "github.com/dgrijalva/jwt-go",
-    "github.com/golang/dep/cmd/dep",
     "github.com/jinzhu/gorm",
     "github.com/jinzhu/gorm/dialects/postgres",
+    "github.com/kerlexov/back_core/db",
+    "github.com/kerlexov/back_core/handler",
+    "github.com/kerlexov/back_core/router",
+    "github.com/kerlexov/back_core/store",
     "github.com/labstack/echo",
     "github.com/labstack/echo/middleware",
     "github.com/labstack/gommon/log",

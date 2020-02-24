@@ -3,8 +3,8 @@ package handler
 import (
 	"net/http"
 
-	"back_core/model"
-	"back_core/utils"
+	"github.com/kerlexov/back_core/model"
+	"github.com/kerlexov/back_core/utils"
 	"github.com/labstack/echo"
 )
 

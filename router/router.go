@@ -4,7 +4,7 @@ import (
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
 	"github.com/labstack/gommon/log"
-	prometheus "back_core/router/middleware"
+	prometheus "github.com/kerlexov/back_core/router/middleware"
 )
 
 func New() *echo.Echo {

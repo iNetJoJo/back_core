@@ -1,7 +1,7 @@
 package handler
 
 import (
-	"back_core/user"
+	"github.com/kerlexov/back_core/user"
 	"github.com/labstack/echo"
 	"net/http"
 )

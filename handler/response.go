@@ -1,9 +1,9 @@
 package handler
 
 import (
-	"back_core/model"
-	"back_core/user"
-	"back_core/utils"
+	"github.com/kerlexov/back_core/model"
+	"github.com/kerlexov/back_core/user"
+	"github.com/kerlexov/back_core/utils"
 )
 
 type userResponse struct {

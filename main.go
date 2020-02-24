@@ -1,10 +1,10 @@
 package main
 
 import (
-	"back_core/db"
-	"back_core/handler"
-	"back_core/router"
-	"back_core/store"
+	"github.com/kerlexov/back_core/db"
+	"github.com/kerlexov/back_core/handler"
+	"github.com/kerlexov/back_core/router"
+	"github.com/kerlexov/back_core/store"
 	"net/http"
 	"time"
 

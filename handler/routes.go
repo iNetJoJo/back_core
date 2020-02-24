@@ -1,8 +1,8 @@
 package handler
 
 import (
-	"back_core/router/middleware"
-	"back_core/utils"
+	"github.com/kerlexov/back_core/router/middleware"
+	"github.com/kerlexov/back_core/utils"
 	"github.com/labstack/echo"
 )
 

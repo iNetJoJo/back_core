@@ -1,7 +1,7 @@
 package store
 
 import (
-	"back_core/model"
+	"github.com/kerlexov/back_core/model"
 	"github.com/jinzhu/gorm"
 )
 

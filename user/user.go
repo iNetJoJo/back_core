@@ -1,7 +1,7 @@
 package user
 
 import (
-	"back_core/model"
+	"github.com/kerlexov/back_core/model"
 )
 
 type Store interface {
