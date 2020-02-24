@@ -71,7 +71,7 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:5d01eff5e585140e3c6f56f75353ed179bede95979f7bafec9d5fed20839113b"
+  digest = "1:e804a9da76e847f13d1b0d4ba6671884c667b829cdcf78ee59b9b37b63522d95"
   name = "github.com/kerlexov/back_core"
   packages = [
     "db",
@@ -84,7 +84,7 @@
     "utils",
   ]
   pruneopts = "UT"
-  revision = "1f4191c054ea26629c80b168fc4d9d72392caa4f"
+  revision = "d15498b7d986782cc419064a90131224f7881f36"
 
 [[projects]]
   digest = "1:efd601ad1d1189884f37ed075fadb5bbd17f1f5acf5862827247c6da56d125ba"
